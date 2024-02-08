@@ -46,4 +46,4 @@ async function fetchSinglePokemonData(id) {
     fetchSinglePokemonData(randomId);
   });
 }
-fetchSinglePokemonData();
+fetchSinglePokemonData(1);
