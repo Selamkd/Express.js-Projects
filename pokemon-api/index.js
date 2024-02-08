@@ -43,7 +43,7 @@ async function fetchSinglePokemonData(id) {
 
   // add an event listener to the refresh button
   refreshButton.addEventListener('click', () => {
-    fetchSinglePokemonData();
+    fetchSinglePokemonData(randomId);
   });
 }
 fetchSinglePokemonData();
