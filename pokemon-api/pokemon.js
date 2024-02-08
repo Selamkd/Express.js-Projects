@@ -1,7 +1,13 @@
 import express from 'express';
-
+import cors from 'cors';
 const app = express();
 
+//enable CORS
+app.use(
+  cors({
+    origin: `*`,
+  })
+);
 const pokemonList = [
   { id: 1, name: 'Bulbasaur', type: 'Grass/Poison' },
   { id: 2, name: 'Charmander', type: 'Fire' },
